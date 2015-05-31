@@ -1,42 +1,60 @@
- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-     android:layout_width="fill_parent"
-     android:layout_height="fill_parent"
-     >
-     <RelativeLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="0dip"
-      android:background="#56A2D3"
-      android:orientation="horizontal"
-         > 
-      <ImageButton
-           android:id="@+id/back"
-           android:layout_width="wrap_content"
-           android:layout_height="50dp"
-           android:text="上一步"
-           android:src="@drawable/ic_launcher"
-    />
- 
-      <TextView
-           android:id="@+id/textview1"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_centerInParent="true"
-           android:layout_weight="1"
-           android:text="登陆" 
-          android:textSize="18sp"/>
-       
-     <TextView
-           android:id="@+id/textview2"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_centerVertical="true"
-           android:layout_alignParentRight="true"
-           android:layout_marginRight="10dp"
-           android:text="注册"  
-          android:textSize="18sp"/>
-         
-   </RelativeLayout>
- 
- 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dip"
+        android:background="#56A2D3"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/returnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:text="login"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="注册"
+            android:onClick="onClick"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="67dp"
+        android:text="帐号" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="54dp"
+        android:text="密码" />
+
 </RelativeLayout>

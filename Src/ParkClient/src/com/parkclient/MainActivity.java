@@ -44,8 +44,8 @@ public class MainActivity extends Activity /*implements OnClickListener*/ {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        btn1 = (Button) findViewById(R.id.button1);
-        btn2 = (Button) findViewById(R.id.button2);
+        btn1 = (Button) findViewById(R.id.parkBtn);
+        btn2 = (Button) findViewById(R.id.publishBtn);
 
 //        btn1.setOnClickListener(this);
 //        btn2.setOnClickListener(this);
@@ -78,15 +78,17 @@ public class MainActivity extends Activity /*implements OnClickListener*/ {
 		// TODO Auto-generated method stub
 		switch (v.getId()) 
 		{
-			case R.id.button1:
-				tst = Toast.makeText(MainActivity.this, "111111111", Toast.LENGTH_SHORT);
-				tst.show(); 
+			case R.id.personMgr:
 				Intent in = new Intent();
 				in.setClass(this, Login.class);
 				startActivity(in);
+				break;
+			case R.id.parkBtn:
+				tst = Toast.makeText(MainActivity.this, "我要停车", Toast.LENGTH_SHORT);
+				tst.show(); 
 				break;       
-			case R.id.button2:
-				tst = Toast.makeText(MainActivity.this, "222222222", Toast.LENGTH_SHORT);
+			case R.id.publishBtn:
+				tst = Toast.makeText(MainActivity.this, "我要发布", Toast.LENGTH_SHORT);
 				tst.show(); 
 				break;
 			default: 
