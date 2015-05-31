@@ -1,0 +1,32 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     >
+     <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="0dip"
+      android:background="#56A2D3"
+      android:orientation="horizontal"
+         > 
+
+      <ImageButton
+          android:id="@+id/returnBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="50dp"
+          android:src="@drawable/ic_launcher"
+          android:text="返回" />
+ 
+      <TextView
+           android:id="@+id/textview1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:layout_weight="1"
+           android:text="ParkClient" 
+          android:textSize="18sp"/>
+         
+   </RelativeLayout>
+ 
+ 
+</RelativeLayout>
