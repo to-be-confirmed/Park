@@ -1,16 +1,163 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Register" >
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_marginBottom="0dip"
+        android:background="@drawable/top_bar_bg"
+        android:orientation="horizontal" >
 
+        <ImageButton
+            android:id="@+id/returnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back_enable"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:text="register"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="已有帐号"
+            android:onClick="onClick"
+            android:textSize="18sp"             
+		    android:textColor="#51A8D4"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/login_mid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout1"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp" >
+        
+        <LinearLayout
+            android:id="@+id/linear_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/security_row_center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#D3C9BF" >
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/Ledit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/security_row_username"
+                android:hint="手机号/邮箱"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                android:paddingTop="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#D3C9BF" >
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/Ledit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Ledit_name"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#ffffff"
+                android:drawableLeft="@drawable/security_row_password"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="#D3C9BF" >
+            </LinearLayout>
+        </LinearLayout>
+		<LinearLayout
+              android:id="@+id/license_agreement"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:gravity="center_vertical"              
+	          android:layout_below="@id/linear_top"
+	          android:layout_marginTop="10dp"
+              android:orientation="horizontal" >
+
+              <CheckBox
+                  android:id="@+id/setting_yejianmoshi_checkbox"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0"
+                  android:checked="false" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:layout_weight="1"
+                  android:text="软件许可接受协议"
+                  android:textColor="#A9A9A9"
+                  android:textSize="14dp" />
+
+          </LinearLayout>
+        
+		<RelativeLayout
+	           android:id="@+id/button_login"
+	           android:layout_width="wrap_content"
+	           android:layout_height="40dp"
+	           android:layout_centerHorizontal="true"
+	           android:layout_below="@id/license_agreement"
+	           android:layout_marginTop="30dp"
+	           android:background="@drawable/security_row_sina_bg"
+	           android:paddingTop="5dp" >
+	
+	           <TextView
+	               android:layout_width="wrap_content"
+	               android:layout_height="wrap_content"
+	               android:layout_centerVertical="true"
+	               android:layout_centerHorizontal="true"
+	               android:gravity="center_vertical"
+	               android:text="       注     册         "
+	               android:textColor="#ffffff" />
+	               <!-- android:paddingLeft="100dp" -->
+	    </RelativeLayout>
+
+
+	</RelativeLayout>
+    
 </RelativeLayout>
