@@ -21,31 +21,41 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int icon_back_enable=0x7f020001;
-        public static final int security_row_center=0x7f020002;
-        public static final int security_row_password=0x7f020003;
-        public static final int security_row_sina_bg=0x7f020004;
-        public static final int security_row_username=0x7f020005;
-        public static final int top_bar_bg=0x7f020006;
+        public static final int app_panel_friendcard_icon=0x7f020000;
+        public static final int ic_launcher=0x7f020001;
+        public static final int icon_back_enable=0x7f020002;
+        public static final int security_row_center=0x7f020003;
+        public static final int security_row_password=0x7f020004;
+        public static final int security_row_sina_bg=0x7f020005;
+        public static final int security_row_username=0x7f020006;
+        public static final int top_bar_bg=0x7f020007;
     }
     public static final class id {
         public static final int Ledit_name=0x7f080006;
         public static final int Ledit_password=0x7f080007;
-        public static final int action_settings=0x7f08000f;
+        public static final int action_settings=0x7f080018;
         public static final int button_login=0x7f080009;
         public static final int forget_key=0x7f080008;
-        public static final int license_agreement=0x7f08000d;
+        public static final int license_agreement=0x7f080016;
         public static final int linear_top=0x7f080005;
         public static final int login_mid=0x7f080004;
+        public static final int mgr_login=0x7f080011;
+        public static final int mgr_mid=0x7f08000e;
+        public static final int mgr_top=0x7f08000d;
+        public static final int msg_center=0x7f080014;
+        public static final int my_order=0x7f080013;
+        public static final int my_park_area=0x7f080012;
         public static final int parkBtn=0x7f08000b;
         public static final int personMgr=0x7f08000a;
         public static final int publishBtn=0x7f08000c;
         public static final int register=0x7f080003;
         public static final int relativeLayout1=0x7f080000;
         public static final int returnBtn=0x7f080001;
-        public static final int setting_yejianmoshi_checkbox=0x7f08000e;
+        public static final int setting=0x7f080015;
+        public static final int setting_yejianmoshi_checkbox=0x7f080017;
         public static final int textview1=0x7f080002;
+        public static final int user_img=0x7f080010;
+        public static final int user_info=0x7f08000f;
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;

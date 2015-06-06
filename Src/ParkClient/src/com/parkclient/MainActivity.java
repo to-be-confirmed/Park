@@ -80,7 +80,7 @@ public class MainActivity extends Activity /*implements OnClickListener*/ {
 		{
 			case R.id.personMgr:
 				Intent in = new Intent();
-				in.setClass(this, Login.class);
+				in.setClass(this, PersonMgr.class);
 				startActivity(in);
 				break;
 			case R.id.parkBtn:

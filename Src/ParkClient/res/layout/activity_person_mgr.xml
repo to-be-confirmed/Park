@@ -3,19 +3,20 @@
      android:layout_height="fill_parent"
      >
      <RelativeLayout
+      android:id="@+id/mgr_top"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_marginBottom="0dip"
-      android:background="#56A2D3"
-      android:orientation="horizontal"
-         > 
+      android:background="@drawable/top_bar_bg"
+      android:orientation="horizontal" > 
 
       <ImageButton
           android:id="@+id/returnBtn"
           android:layout_width="wrap_content"
           android:layout_height="50dp"
-          android:src="@drawable/ic_launcher"
-          android:text="返回" />
+          android:layout_centerVertical="true"
+          android:src="@drawable/icon_back_enable"
+          android:text="返回" 
+          android:onClick="onClick"/>
  
       <TextView
            android:id="@+id/textview1"
@@ -24,9 +25,109 @@
            android:layout_centerInParent="true"
            android:layout_weight="1"
            android:text="ParkClient" 
-          android:textSize="18sp"/>
-         
+           android:textSize="18sp"/>         
    </RelativeLayout>
- 
- 
+   
+   <RelativeLayout
+        android:id="@+id/mgr_mid"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/mgr_top"
+        android:paddingTop="30dp"
+        android:orientation="vertical" > 
+
+        <LinearLayout
+            android:id="@+id/user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+       
+	      <ImageButton
+	          android:id="@+id/user_img"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_centerVertical="true"
+	          android:src="@drawable/security_row_username"
+	       />
+	      
+	        <LinearLayout
+	            android:layout_width="1dp"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="20dp"
+                android:background="#D3C9BF">	            
+	        </LinearLayout>
+            
+   			<RelativeLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+				android:layout_marginLeft="15dp">
+				<Button
+				    android:id="@+id/mgr_login"
+				    android:background="@android:color/transparent"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+				    android:text="登录" 
+				    android:textColor="#51A8D4"
+         			android:onClick="onClick"/>
+			</RelativeLayout>
+       </LinearLayout>
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+			android:layout_alignParentBottom="true"
+            android:background="#D3C9BF">	
+   	   </LinearLayout>   
+      
+	</RelativeLayout>
+        
+    <RelativeLayout        
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@id/mgr_mid"
+         android:paddingTop="20dp"
+        >       
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">	
+            
+			<Button
+			    android:id="@+id/my_park_area"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="我的车位"
+				android:background="@android:color/transparent"
+			    android:onClick="onClick" 
+			/>
+			<Button
+			    android:id="@+id/my_order"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dp"
+			    android:text="我的订单" 
+				android:background="@android:color/transparent"
+			    android:onClick="onClick"
+			/>
+			<Button
+			    android:id="@+id/msg_center"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dp"
+			    android:text="消息中心" 
+				android:background="@android:color/transparent"
+			    android:onClick="onClick"
+			/>
+			<Button
+			    android:id="@+id/setting"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="10dp"
+				android:gravity="center_vertical"
+			    android:text="设置" 
+				android:background="@android:color/transparent"
+			    android:onClick="onClick"
+			/>
+   	   </LinearLayout>   
+    </RelativeLayout> 
 </RelativeLayout>
